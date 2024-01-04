@@ -1,0 +1,35 @@
+<!-- alta_baja_doctor.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alta/Baja Doctor</title>
+  <link rel="stylesheet" href="./styles/lista_doctores.css">
+</head>
+<body>
+
+  <div class="content">
+    <h2>Alta/Baja Doctor</h2>
+    <!-- Agrega el botón para ir a la página de alta de doctor -->
+    <button onclick="irAltaDoctor()">Dar de Alta Doctor</button>
+    <!-- Tabla para mostrar la lista de doctores -->
+    <table id="doctoresTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Especialidad</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Las filas se generarán dinámicamente con JavaScript -->
+      </tbody>
+    </table>
+    <button onclick="goBack()">Regresar</button>
+  </div>
+
+  <script src="./javascripts/lista_doctores.js"></script>
+</body>
+</html>

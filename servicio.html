@@ -1,0 +1,34 @@
+<!-- servicio.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agregar Servicio al Paciente</title>
+  <link rel="stylesheet" href="./styles/servicio.css">
+</head>
+<body>
+
+  <div class="content">
+    <h2>Agregar Servicio al Paciente</h2>
+    <form id="servicioForm">
+      <div class="form-group">
+        <label for="numReceta">Número de Receta:</label>
+        <input type="text" id="numReceta" name="numReceta" required>
+      </div>
+      <div class="form-group">
+        <label for="tipoServicio">Tipo de Servicio:</label>
+        <input type="text" id="tipoServicio" name="tipoServicio" required>
+      </div>
+      <div class="form-group">
+        <label for="descripcion">Descripción:</label>
+        <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+      </div>
+      <button type="submit">Agregar Servicio</button>
+    </form>
+    <button onclick="goBack()">Regresar</button>
+  </div>
+
+  <script src="./javascripts/servicio.js"></script>
+</body>
+</html>

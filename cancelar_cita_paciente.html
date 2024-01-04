@@ -1,0 +1,26 @@
+<!-- cancelar_cita_paciente.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cancelar Cita</title>
+  <link rel="stylesheet" href="./styles/cancelar_cita_paciente.css">
+</head>
+<body>
+
+  <div class="content">
+    <h2>Cancelar Cita</h2>
+    <form id="cancelarCitaForm">
+      <div class="form-group">
+        <label for="idCita">ID de la Cita:</label>
+        <input type="text" id="idCita" name="idCita" required>
+      </div>
+      <button type="submit">Cancelar Cita</button>
+    </form>
+    <button onclick="goBack()">Regresar</button>
+  </div>
+
+  <script src="./javascripts/cancelar_cita_paciente.js"></script>
+</body>
+</html>

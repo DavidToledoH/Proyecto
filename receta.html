@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generar Receta</title>
+  <link rel="stylesheet" href="./styles/receta.css">
+</head>
+<body>
+
+  <div class="content">
+    <h2>Generar Receta</h2>
+    <form id="recetaForm">
+      <div class="form-group">
+        <label for="nombrePaciente">Nombre del Paciente:</label>
+        <input type="text" id="nombrePaciente" name="nombrePaciente" required>
+      </div>
+      <div class="form-group">
+        <label for="nombreMedico">Nombre del Médico:</label>
+        <input type="text" id="nombreMedico" name="nombreMedico" readonly required>
+      </div>
+      <div class="form-group">
+        <label for="numReceta">Número de Receta:</label>
+        <input type="text" id="numReceta" name="numReceta" readonly required>
+      </div>
+      <div class="form-group">
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha" readonly required>
+      </div>
+      <div class="form-group">
+        <label for="diagnostico">Diagnóstico:</label>
+        <textarea id="diagnostico" name="diagnostico" rows="4" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="medicamentos">Medicamentos:</label>
+        <textarea id="medicamentos" name="medicamentos" rows="4" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="tratamiento">Tratamiento:</label>
+        <textarea id="tratamiento" name="tratamiento" rows="4" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="duracion">Duración:</label>
+        <input type="text" id="duracion" name="duracion" required>
+      </div>
+      <div class="form-group">
+        <label for="total">Total (opcional):</label>
+        <input type="text" id="total" name="total">
+      </div>
+      <button type="submit">Generar Receta</button>
+    </form>
+    <button onclick="goBack()">Regresar</button>
+  </div>
+
+  <script src="./javascripts/receta.js"></script>
+</body>
+</html>
